@@ -7,6 +7,7 @@ load_dotenv()
 
 import os
 api_key1 = os.environ.get("API_KEY")
+api_key2 = os.environ.get("RAPID_API_KEY")
 
 
 
@@ -60,7 +61,7 @@ def get_text(problem):
         querystring = {"query":i,"location":"India","distance":"10","language":"en_GB","remoteOnly":"false","datePosted":"month","employmentTypes":"fulltime;parttime;intern;contractor","index":"0"}
 
         headers = {
-            "X-RapidAPI-Key": "ce24969d65mshe63ee4501401e7dp1110d2jsn362f8f2a8e77",
+            "X-RapidAPI-Key": api_key2,
             "X-RapidAPI-Host": "jobs-api14.p.rapidapi.com"
         }
 
