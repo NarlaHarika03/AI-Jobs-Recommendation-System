@@ -1,28 +1,3 @@
-# from flask import Flask, render_template, request, redirect
-# import jobs
-
-# app = Flask(__name__)  # Correcting to __name_
-
-# problem = ''
-
-# @app.route('/', methods=['GET', 'POST'])
-# def index():
-#     global problem
-#     if request.method == 'POST':
-#         problem = request.form.get('problem', '')  
-#         if problem:
-#             jobs.get_text(problem)
-#             final = jobs.send()
-#             print(final)
-#     return render_template('home.html')
-
-
-
-# if __name__ == '__main__':
-#     app.run(debug=True)  
-
-
-
 from flask import Flask, render_template, request, redirect
 import jobs
 
